@@ -7,7 +7,10 @@ export default function MealItem({ title, slug, image, summary, creator }) {
     <article className={styles.meal}>
       <header>
         <div className={styles.image}>
-          <Image src={image} alt={title} fill />
+          <Image
+            src={`https://labattaria-nextjs-demo-users-image.s3.eu-north-1.amazonaws.com/${image}`}
+            alt={title}
+            fill />
         </div>
         <div className={styles.headerText}>
           <h2>{title}</h2>

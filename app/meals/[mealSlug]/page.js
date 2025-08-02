@@ -16,7 +16,7 @@ export default function MealDetailsPage({ params }) {
         <>
             <header className={styles.header}>
                 <div className={styles.image}>
-                    <Image src={meal.image} alt={meal.title} fill />
+                    <Image src={`https://labattaria-nextjs-demo-users-image.s3.eu-north-1.amazonaws.com/${meal.image}`} alt={meal.title} fill />
                 </div>
                 <div className={styles.headerText}>
                     <h1>{meal.title}</h1>

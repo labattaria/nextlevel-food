@@ -4,7 +4,7 @@ import { getMeal } from '@/lib/meals';
 import { notFound } from 'next/navigation';
 
 export async function generateMetadata({ params }) {
-    const meal = getMeal(params.mealSlug);
+    const meal = await getMeal(params.mealSlug);
 
     if (!meal) {
         notFound();
@@ -16,14 +16,15 @@ export async function generateMetadata({ params }) {
     };
 }
 
-export default function MealDetailsPage({ params }) {
-    const meal = getMeal(params.mealSlug);
+export default async function MealDetailsPage({ params }) {
+    const meal = await getMeal(params.mealSlug);
 
     if (!meal) {
         notFound();
     }
 
-    meal.instructions = meal.instructions.replace(/\n/g, '<br />');
+    const instructions = meal.instructions ?? '';
+    const instructionsWithBreaks = instructions.replace(/\n/g, '<br />');
 
     return (
         <>
@@ -34,7 +35,7 @@ export default function MealDetailsPage({ params }) {
                 <div className={styles.headerText}>
                     <h1>{meal.title}</h1>
                     <p className={styles.creator}>
-                        by <a href={`mailto:${meal.creator_name}`}>{meal.creator}</a>
+                        by <a href={`mailto:${meal.creator_email}`}>{meal.creator}</a>
                     </p>
                     <p className={styles.summary}>
                         {meal.summary}
@@ -42,10 +43,11 @@ export default function MealDetailsPage({ params }) {
                 </div>
             </header>
             <main>
-                <p className={styles.instructions} dangerouslySetInnerHTML={{
-                    __html: meal.instructions,
-                }}
-                ></p>
+                <p
+                    className={styles.instructions}
+                    dangerouslySetInnerHTML={{ __html: instructionsWithBreaks }}
+                >
+                </p>
             </main>
         </>
     );

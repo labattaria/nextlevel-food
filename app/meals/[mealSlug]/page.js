@@ -5,7 +5,6 @@ import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
   const meals = await getMeals();
-  console.log('Fetched meals:', meals);
 
   if (!meals || meals.length === 0) {
     return [];

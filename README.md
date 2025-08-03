@@ -11,7 +11,8 @@
 [![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)](#)
 [![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](#)
 [![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](#)
-[![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)](#)
+[![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)](#)
+[![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)](#)
 [![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)](#)
 [![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)](#)
 
@@ -27,7 +28,7 @@ But you can use this app manually on your local machine
 
 - **Next.js** - React framework for building fast, full-stack web applications with server-side rendering and static site generation
 - **React** - Library used for building user interfaces, particularly for single-page applications where you need a fast, interactive experience
-- **SQLite** - A lightweight, self-contained SQL database engine. It stores the entire database in a single file
+- **Prisma** – A modern ORM that streamlines database access by providing a type-safe, auto-generated query builder and intuitive API for working with relational databases efficiently and reliably
 - **SASS** - CSS preprocessor with advanced features like variables and nesting
 - **AWS S3** - Scalable object storage service used for storing and serving image assets in the application
 - **slugify** – Utility to convert strings into URL-friendly slugs

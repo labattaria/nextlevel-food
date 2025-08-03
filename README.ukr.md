@@ -11,7 +11,8 @@
 [![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)](#)
 [![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](#)
 [![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](#)
-[![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)](#)
+[![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)](#)
+[![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)](#)
 [![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)](#)
 [![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)](#)
 
@@ -27,7 +28,7 @@
 
 - **Next.js** - Фреймворк на базі React для створення швидких, повнофункціональних вебзастосунків із серверним рендерингом і генерацією статичних сторінок
 - **React** - Бібліотека, що використовується для створення користувацьких інтерфейсів, особливо для односторінкових застосунків, де потрібен швидкий та інтерактивний досвід
-- **SQLite** - Легка, автономна SQL-база даних. Весь вміст зберігається в одному файлі
+- **Prisma** – Сучасний ORM, який спрощує доступ до бази даних, надаючи типобезпечний, автоматично згенерований конструктор запитів та інтуїтивно зрозумілий API для ефективної та надійної роботи з реляційними базами даних
 - **SASS** - CSS-препроцесор з розширеними можливостями, такими як змінні, вкладеність та модулi
 - **AWS S3** - Масштабоване сховище об'єктного зберігання, яке використовується для зберігання та доставки зображень у застосунку
 - **slugify** – Утиліта для перетворення рядків у URL-дружні «слаги»

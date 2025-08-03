@@ -1,6 +1,6 @@
 **Read in another language: [Українська](README.ukr.md), [English](README.md).**
 
-# NextLevel Food Next.js App
+# NextLevel Food App
 
 ---
 
@@ -80,13 +80,13 @@ The full list of dependencies can be found in the **package.json** file.
 1. Clone the repository:
 
 ```shell
-git clone https://github.com/labattaria/NextLevel-Food-app.git
+git clone https://github.com/labattaria/nextlevel-food.git
 ```
 
 2. Install project dependencies:
 
 ```shell
-cd NextLevel-Food-app
+cd nextlevel-food
 npm install
 ```
 

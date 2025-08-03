@@ -1,19 +1,34 @@
 import Image from 'next/image';
 import styles from './page.module.scss';
-import { getMeal } from '@/lib/meals';
+import { getMeal, getMeals } from '@/lib/meals';
 import { notFound } from 'next/navigation';
 
+export async function generateStaticParams() {
+  const meals = await getMeals();
+
+  if (!meals || meals.length === 0) {
+    return [];
+  }
+
+  return meals.map((meal) => ({
+    mealSlug: meal.slug,
+  }));
+}
+
 export async function generateMetadata({ params }) {
-    const meal = await getMeal(params.mealSlug);
+  const meal = await getMeal(params.mealSlug);
 
-    if (!meal) {
-        notFound();
-    }
-
+  if (!meal) {
     return {
-        title: meal.title,
-        description: meal.summary,
+      title: 'Meal not found',
+      description: 'This meal does not exist.',
     };
+  }
+
+  return {
+    title: meal.title,
+    description: meal.summary,
+  };
 }
 
 export default async function MealDetailsPage({ params }) {

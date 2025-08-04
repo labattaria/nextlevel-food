@@ -20,7 +20,7 @@
 
 Цей базовий додаток демонструє платформу для гурманів, де вони можуть ділитися своїми улюбленими рецептами з усім світом. Це місце для відкриття нових страв і спілкування з іншими поціновувачами їжі.
 
-Додаток у цьому репозиторії розгорнуто на сайтi [![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)](#), за цією URL-адресою:
+Додаток у цьому репозиторії розгорнуто на сайтi [![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)](#), за цією URL-адресою: [https://nextlevel-food-amber.vercel.app/](https://nextlevel-food-amber.vercel.app/)
 
 Але ви можете використовувати цей додаток вручну на своєму локальному комп’ютері
 

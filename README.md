@@ -20,7 +20,7 @@ This is the NextLevel Food Next.js + React app
 
 This basic application demonstrates a platform for foodies to share their favorite recipes with the world. It's a place to discover new dishes and to connect with other food lovers.
 
-The app in this repo is hosted on [![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)](#), hosting public URL:
+The app in this repo is hosted on [![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)](#), hosting public URL: [https://nextlevel-food-amber.vercel.app/](https://nextlevel-food-amber.vercel.app/)
 
 But you can use this app manually on your local machine
 

@@ -1,6 +1,7 @@
-import { prisma } from '../lib/prisma.js';
+import { prisma } from '../lib/prisma';
+import type { Prisma } from '@prisma/client';
 
-const dummyMeals = [
+const dummyMeals: Prisma.MealCreateInput[] = [
   {
     title: 'Juicy Cheese Burger',
     slug: 'juicy-cheese-burger',
@@ -185,7 +186,7 @@ async function seed() {
 }
 
 seed()
-  .catch(e => {
+  .catch((e) => {
     console.error(e);
     process.exit(1);
   })

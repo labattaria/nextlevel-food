@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './meal-item.module.scss';
+import type { MealItemProps } from './types';
 
-export default function MealItem({ title, slug, image, summary, creator }) {
+export default function MealItem({ title, slug, image, summary, creator }: MealItemProps) {
   return (
     <article className={styles.meal}>
       <header>

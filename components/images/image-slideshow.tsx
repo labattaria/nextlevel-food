@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import type { StaticImageData } from 'next/image';
 
 import burgerImg from '@/assets/burger.jpg';
 import curryImg from '@/assets/curry.jpg';
@@ -12,7 +13,12 @@ import schnitzelImg from '@/assets/schnitzel.jpg';
 import tomatoSaladImg from '@/assets/tomato-salad.jpg';
 import styles from './image-slideshow.module.scss';
 
-const images = [
+interface Slide {
+  image: StaticImageData;
+  alt: string;
+}
+
+const images: Slide[] = [
   { image: burgerImg, alt: 'A delicious, juicy burger' },
   { image: curryImg, alt: 'A delicious, spicy curry' },
   { image: dumplingsImg, alt: 'Steamed dumplings' },
@@ -23,7 +29,7 @@ const images = [
 ];
 
 export default function ImageSlideshow() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
   useEffect(() => {
     const interval = setInterval(() => {

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import type { StaticImageData } from 'next/image';
 import mealIcon from '@/assets/icons/meal.png';
 import communityIcon from '@/assets/icons/community.png';
 import eventsIcon from '@/assets/icons/events.png';
@@ -18,16 +19,19 @@ export default function CommunityPage() {
 
         <ul className={styles.perks}>
           <li>
-            <Image src={mealIcon} alt="A delicious meal" />
+            <Image src={mealIcon as StaticImageData} alt="A delicious meal" />
             <p>Share & discover recipes</p>
           </li>
           <li>
-            <Image src={communityIcon} alt="A crowd of people, cooking" />
+            <Image
+              src={communityIcon as StaticImageData}
+              alt="A crowd of people, cooking"
+            />
             <p>Find new friends & like-minded people</p>
           </li>
           <li>
             <Image
-              src={eventsIcon}
+              src={eventsIcon as StaticImageData}
               alt="A crowd of people at a cooking event"
             />
             <p>Participate in exclusive events</p>

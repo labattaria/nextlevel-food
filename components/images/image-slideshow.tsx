@@ -11,7 +11,6 @@ import macncheeseImg from '@/assets/macncheese.jpg';
 import pizzaImg from '@/assets/pizza.jpg';
 import schnitzelImg from '@/assets/schnitzel.jpg';
 import tomatoSaladImg from '@/assets/tomato-salad.jpg';
-import styles from './image-slideshow.module.scss';
 
 interface Slide {
   image: StaticImageData;
@@ -42,12 +41,15 @@ export default function ImageSlideshow() {
   }, []);
 
   return (
-    <div className={styles.slideshow}>
+    <div className="relative w-full h-full rounded-lg overflow-hidden shadow-[0_0_8px_rgba(0,0,0,0.5)]">
       {images.map((image, index) => (
         <Image
           key={index}
           src={image.image}
-          className={index === currentImageIndex ? styles.active : ''}
+          className={`w-full h-full object-cover absolute top-0 left-0 transition-all duration-500 ease-in-out
+            ${index === currentImageIndex
+              ? 'z-[1] opacity-100 scale-100 translate-x-0 rotate-0'
+              : 'opacity-0 scale-110 -translate-x-4 -rotate-6'}`}
           alt={image.alt}
         />
       ))}

@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import styles from './page.module.scss';
 import { getMeal, getMeals } from '@/lib/meals';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
@@ -49,25 +48,34 @@ export default async function MealDetailsPage({ params }: { params: Params }) {
 
   return (
     <>
-      <header className={styles.header}>
-        <div className={styles.image}>
+      <header className="flex gap-12 px-4 py-8 max-w-[80rem] mx-auto">
+        <div className="relative w-[30rem] h-[20rem]">
           <Image
             src={`https://labattaria-nextjs-demo-users-image.s3.eu-north-1.amazonaws.com/${meal.image}`}
             alt={meal.title}
             fill
+            className="object-cover rounded-lg shadow-[0_0_0.5rem_rgba(0,0,0,0.5)] animate-fade-slide-in-left"
           />
         </div>
-        <div className={styles.headerText}>
-          <h1>{meal.title}</h1>
-          <p className={styles.creator}>
-            by <a href={`mailto:${meal.creator_email}`}>{meal.creator}</a>
+        <div className="px-4 pt-2 text-[#ddd6cb] max-w-[40rem] animate-fade-slide-in-right">
+          <h1 className="leading-tight h-[136px] text-[3.5rem] font-bold uppercase font-montserrat text-shadow-[0_0_0.5rem_rgba(0,0,0,0.5)]">
+            {meal.title}
+          </h1>
+          <p className="my-6 text-[1.5rem] italic text-[#cfa69b]">
+            by{' '}
+            <a
+              href={`mailto:${meal.creator_email}`}
+              className="bg-gradient-to-r from-[#f9572a] to-[#ff8a05] bg-clip-text text-transparent hover:text-transparent hover:shadow-[0_0_1.125rem_rgba(248,190,42,0.8)]"
+            >
+              {meal.creator}
+            </a>
           </p>
-          <p className={styles.summary}>{meal.summary}</p>
+          <p className="my-6 text-[1.5rem]">{meal.summary}</p>
         </div>
       </header>
       <main>
         <p
-          className={styles.instructions}
+          className="text-[1.25rem] !leading-normal bg-[#6e6464] text-[#13120f] rounded-lg shadow-[0_0_0.5rem_rgba(0,0,0,0.5)] p-8 max-w-[60rem] mx-auto my-8 animate-fade-slide-in-bottom"
           dangerouslySetInnerHTML={{ __html: instructionsWithBreaks }}
         />
       </main>

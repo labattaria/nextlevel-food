@@ -1,7 +1,5 @@
-import styles from './loading.module.scss';
-
 export default function MealsLoadingPage() {
     return (
-        <p className={styles.loading}>Fetching meals...</p>
+        <p className="text-center animate-loading">Fetching meals...</p>
     );
 }

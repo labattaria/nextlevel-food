@@ -14,8 +14,8 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className="font-quicksand">
+      <body className="m-0 bg-[radial-gradient(#282c34,#282c34)]">
         <MainHeader />
         {children}
       </body>

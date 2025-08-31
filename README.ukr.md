@@ -10,13 +10,14 @@
 
 [![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)](#)
 [![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](#)
+[![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](#)
 [![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](#)
 [![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)](#)
 [![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)](#)
-[![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)](#)
 [![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)](#)
+[![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)](#)
 
-Це додаток NextLevel Food, створений на Next.js
+Це додаток NextLevel Food, створений на Next.js, TypeScript та React
 
 Цей базовий додаток демонструє платформу для гурманів, де вони можуть ділитися своїми улюбленими рецептами з усім світом. Це місце для відкриття нових страв і спілкування з іншими поціновувачами їжі.
 
@@ -29,10 +30,11 @@
 - **Next.js** - Фреймворк на базі React для створення швидких, повнофункціональних вебзастосунків із серверним рендерингом і генерацією статичних сторінок
 - **React** - Бібліотека, що використовується для створення користувацьких інтерфейсів, особливо для односторінкових застосунків, де потрібен швидкий та інтерактивний досвід
 - **Prisma** – Сучасний ORM, який спрощує доступ до бази даних, надаючи типобезпечний, автоматично згенерований конструктор запитів та інтуїтивно зрозумілий API для ефективної та надійної роботи з реляційними базами даних
-- **SASS** - CSS-препроцесор з розширеними можливостями, такими як змінні, вкладеність та модулi
+- **TypeScript** – статична типізація для безпечнішого та зручнішого в підтримці коду
 - **AWS S3** - Масштабоване сховище об'єктного зберігання, яке використовується для зберігання та доставки зображень у застосунку
 - **slugify** – Утиліта для перетворення рядків у URL-дружні «слаги»
 - **xss** – Бібліотека для очищення користувацького вводу з метою запобігання атакам типу XSS (міжсайтове скриптування)
+- **Tailwind CSS** – CSS-фреймворк з підходом utility-first для швидкої та адаптивної стилізації інтерфейсу
 
 Повний список залежностей можна знайти у файлі **package.json**.
 
